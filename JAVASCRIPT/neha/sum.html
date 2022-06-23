@@ -68,48 +68,34 @@
         color: red;
     }
 
-    
 </style>
 <body>
     <main>
-    <h1>Slope Formula</h1>
-    <!-- <p>
-      <strong><em>Formula: e^x=1+x/1!+x^2/2!+x^3/3!+…, </em></strong>  
-    </p> -->
-    
+    <h1>Sum</h1>
+    <p>
+      <strong><em>Formula: x+y </em></strong>
+    </p>
     <div class="x-value">
-        <label for="x">Enter value of x1: </label>
-        <input type="number" name="x1" id="x1" required/>
-    </div>
-        
-    <div class="x-value">
-        <label for="x">Enter value of x2: </label>
-        <input type="number" name="x2" id="x2" required/>
+        <label for="x">Enter num1: </label>
+        <input type="number" name="x" id="x" required/>
     </div>
 
-    <div class="x-value">
-        <label for="x">Enter value of y1: </label>
-        <input type="number" name="y1" id="y1" required/>
+    <div class="num-value">
+        <label for="num">Enter num2: </label>
+        <input type="number" name="num" id="num" required>
     </div>
 
-    <div class="x-value">
-        <label for="x">Enter value of y2: </label>
-        <input type="number" name="y2" id="y2" required/>
-    </div>
-       
 
-        <button onclick="slp(document.getElementById('x1').value, document.getElementById('x2').value, document.getElementById('y1').value, document.getElementById('y2').value)">Compute Slope Formula</button>
+        <button onclick="sum(document.getElementById('x').value,document.getElementById('num').value)">Compute Sum</button>
 
         <div class="output">
             <label>Output:</label>
             <div class="output-div">
-
             </div>
             
         </div>
         <p class="error-message"></p>
     </main>
-
-    <script src="slopeformula01.js"></script>
+    <script src="sum.js"></script>
 </body>
 </html>
