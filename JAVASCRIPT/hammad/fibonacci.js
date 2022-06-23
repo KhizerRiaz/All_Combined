@@ -1,6 +1,6 @@
-const prompt = require("prompt-sync")({
-    fake_val: "OPTIONAL CONFIG VALUES HERE",
-});
+// const prompt = require("prompt-sync")({
+//     fake_val: "OPTIONAL CONFIG VALUES HERE",
+// });
 
 function Fib(n) {
     if (n <= 1) {

@@ -1,15 +1,16 @@
 //EULERS METHOD
 // Yn+1 = Yn + h * f(x,y)
 
-const prompt = require("prompt-sync")({
-  fake_val: "OPTIONAL CONFIG VALUES HERE",
-});
+// const prompt = require("prompt-sync")({
+//   fake_val: "OPTIONAL CONFIG VALUES HERE",
+// });
 
-function f(x, y) {
-  //   f(x,y) = x + y
-  return x + y;
-}
+// function f(x, y) {
+//   //   f(x,y) = x + y
+//   return x + y;
+// }
 
+<<<<<<< HEAD
 function eulerRK(x,y,b) {
   var x = 0.0,
     y = 0.0,
@@ -19,6 +20,14 @@ function eulerRK(x,y,b) {
   // x = prompt("Enter the value of n");
   // y = prompt("Enter the value of y");
   // b = prompt("Enter step size (b)");
+=======
+function euler(x, y, b){
+    var n = 5;
+
+//   x = prompt("Enter the value of n");
+//   y = prompt("Enter the value of y");
+//   b = prompt("Enter step size (b)");
+>>>>>>> b6d6148740d94d4063dce8d0399682a9ea55e255
 
   x = parseFloat(x);
   y = parseFloat(y);
@@ -38,10 +47,10 @@ function eulerRK(x,y,b) {
   // f = 1.0;
   for (var i = 0; i < arrX.length - 1; ++i) {
     //   console.log(f);
-    arrY.push(arrY[arrY.length - 1] + f(arrX[i], arrY[i]) * h);
+    arrY.push(arrY[arrY.length - 1] + (arrX[i], arrY[i]) * h);
     //   console.log(arrY[arrY.length]);
   }
   return arrY;
-};
+}
 
-console.log(euler());
+// console.log(euler());
