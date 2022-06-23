@@ -1,24 +1,102 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h2>Binomial:</h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-        <h6>Sample: 8,3 = 56</h6>
-        <p id="bino"></p>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        align-items: center;
+        border: 1px solid #222222;
+        padding-bottom: 20px;
 
-        <script>
-            function binomial() {
-                n = 0;
-                k = 0;
-                var n = prompt("Enter first value: ");
-                var k = prompt("Enter second value: ");
-                var coeff = 1;
-                for (var x = n - k + 1; x <= n; x++) coeff *= x;
-                for (x = 1; x <= k; x++) coeff /= x;
-                return coeff;
-            }
+    }
 
-            document.getElementById("bino").innerHTML = binomial();
-        </script>
-    </body>
+    main input{
+        width: 100px;
+        height: 30px;
+        margin-bottom: 20px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    main input:focus{
+        outline: transparent;
+    }
+
+    main label{
+        margin-bottom: 10px;
+    }
+
+    main button{
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        border: 1px solid transparent;
+    }
+
+    main button:hover{
+        background-color:#2222;
+        font-weight: bold;
+    }
+
+    .output{
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .output-div{
+        width: 200px;
+        border: 1px solid grey;
+        margin-left: 10px;
+    }
+
+    .error-message{
+        color: red;
+    }
+
+    
+</style>
+<body>
+    <main>
+    <h1>Binomial Coefficient</h1>
+    
+    <div class="x-value">
+        <label for="x">Enter first value: </label>
+        <input type="number" name="x" id="x" required/>
+    </div>
+        
+    <div class="num-value">
+        <label for="num">Enter second value: </label>
+        <input type="number" name="num" id="num" required>
+    </div>
+       
+
+        <button onclick="binomial(document.getElementById('x').value, document.getElementById('num').value)">Compute Binomial Coefficient</button>
+
+        <div class="output">
+            <label>Output:</label>
+            <div class="output-div">
+
+            </div>
+            
+        </div>
+        <p class="error-message"></p>
+    </main>
+
+    <script src="binomial-coefficient.js"></script>
+</body>
 </html>

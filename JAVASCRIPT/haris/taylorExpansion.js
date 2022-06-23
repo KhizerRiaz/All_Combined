@@ -8,7 +8,17 @@ function taylorExpansion(x,numOfTerms){
     }
 
     sum = sum+1;
-    return sum
+    console.log(sum)
+    ex = parseInt(x)
+    num = parseInt(num)
+    if(ex.value != '' && num.value !=''){
+        document.querySelector(".output-div").textContent = sum;
+        document.querySelector(".error-message").textContent=""
+    }
+    else{
+        document.querySelector(".output-div").textContent = "";
+        document.querySelector(".error-message").textContent = "Enter the values of x and num to compute taylor series"
+    }
     
 
 }
