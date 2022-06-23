@@ -17,7 +17,7 @@ npm test
 Head over to combinedtasks and run index.html
 
 ```
-# Some SS of our fron end
+# Some SS of our front end
 
 ![First](1.PNG)
 ![Secind](2.PNG)
