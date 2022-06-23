@@ -22,16 +22,16 @@ def relax(A, maxsteps, convergence):
 
 def boundary(A,x,y):
 
-
-    Nx = A.shape[1]
-    Ny = A.shape[0]
-    Lx = x[Nx-1]
-    
-
-    A[:,0]    =   100*numpy.sin(math.pi*x/Lx)
-    A[:,Nx-1] = - 100*numpy.sin(math.pi*x/Lx)
-    A[0,:]    = 0.0
-    A[Ny-1,:] = 0.0
+    try:
+        Nx = A.shape[1]
+        Ny = A.shape[0]
+        Lx = x[Nx-1]
+        A[:,0]    =   100*numpy.sin(math.pi*x/Lx)
+        A[:,Nx-1] = - 100*numpy.sin(math.pi*x/Lx)
+        A[0,:]    = 0.0
+        A[Ny-1,:] = 0.0
+    except:
+        return 0
 
 
 def inputs(Nx,Ny,maxiter):
