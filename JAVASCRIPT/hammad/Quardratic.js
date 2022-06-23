@@ -1,7 +1,7 @@
 
 //Quardratic Formula 
 
-quard = (a,b,c) => {
+function quard(a,b,c){
     var result = []
     let x1 = (-b + Math.pow(b*b - 4*a*c , 0.5) ) / (2*a)
     let x2 = (-b - Math.pow(b*b - 4*a*c , 0.5) ) / (2*a)
@@ -10,4 +10,4 @@ quard = (a,b,c) => {
     return result
 }
 
-console.log (quard(1,2,-15))
+// console.log (quard(1,2,-15))
