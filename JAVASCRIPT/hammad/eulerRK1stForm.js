@@ -1,24 +1,24 @@
 //EULERS METHOD
 // Yn+1 = Yn + h * f(x,y)
 
-const prompt = require("prompt-sync")({
-  fake_val: "OPTIONAL CONFIG VALUES HERE",
-});
+// const prompt = require("prompt-sync")({
+//   fake_val: "OPTIONAL CONFIG VALUES HERE",
+// });
 
 function f(x, y) {
   //   f(x,y) = x + y
   return x + y;
 }
 
-const euler = () => {
+function euler(x, y, b){
   var x = 0.0,
     y = 0.0,
     b = 0.0,
     n = 5;
 
-  x = prompt("Enter the value of n");
-  y = prompt("Enter the value of y");
-  b = prompt("Enter step size (b)");
+//   x = prompt("Enter the value of n");
+//   y = prompt("Enter the value of y");
+//   b = prompt("Enter step size (b)");
 
   x = parseFloat(x);
   y = parseFloat(y);
@@ -42,6 +42,6 @@ const euler = () => {
     //   console.log(arrY[arrY.length]);
   }
   return arrY;
-};
+}
 
-console.log(euler());
+// console.log(euler());

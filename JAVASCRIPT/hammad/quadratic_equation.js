@@ -1,38 +1,43 @@
-const prompt = require('prompt-sync')({fake_val: "OPTIONAL CONFIG VALUES HERE",});
-let root1, root2;
+// const prompt = require('prompt-sync')({fake_val: "OPTIONAL CONFIG VALUES HERE",});
+
+function quadratic_equation(a,b,c){
+    let root1, root2;
 
 
-let a = prompt("Enter the first number: ");
-let b = prompt("Enter the second number: ");
-let c = prompt("Enter the third number: ");
+    // let a = prompt("Enter the first number: ");
+    // let b = prompt("Enter the second number: ");
+    // let c = prompt("Enter the third number: ");
 
 
-let discriminant = b * b - 4 * a * c;
+    let discriminant = b * b - 4 * a * c;
 
 
-if (discriminant > 0) {
-    root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-    root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+    if (discriminant > 0) {
+        root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+        root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
 
-    
-    console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
-}
+        
+        // console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
+        return [root1, root2];
+    }
 
-// condition for real and equal roots
-else if (discriminant == 0) {
-    root1 = root2 = -b / (2 * a);
+    // condition for real and equal roots
+    else if (discriminant == 0) {
+        root1 = root2 = -b / (2 * a);
 
-    
-    console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
-}
+        
+        // console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
+        return [root1, root2];
+    }
 
-// if roots are not real
-else {
-    let realPart = (-b / (2 * a)).toFixed(2);
-    let imagPart = (Math.sqrt(-discriminant) / (2 * a)).toFixed(2);
+    // if roots are not real
+    else {
+        let realPart = (-b / (2 * a)).toFixed(2);
+        let imagPart = (Math.sqrt(-discriminant) / (2 * a)).toFixed(2);
 
-    
-    console.log(
-    `The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`
-  );
+        
+        // console.log(`The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`);
+        return [realPart, imagPart, realPart - imagPart]
+
+    }
 }
