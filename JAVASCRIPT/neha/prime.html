@@ -68,40 +68,25 @@
         color: red;
     }
 
-    
 </style>
 <body>
     <main>
-    <h1>Trignometric Identity</h1>
-    
-    
+    <h1>Prime Number</h1>
+   
     <div class="x-value">
-        <label for="x">Enter value of x: </label>
+        <label for="x">Enter x1: </label>
         <input type="number" name="x" id="x" required/>
     </div>
-        
-       
 
-        <button onclick="trignometricidentity(document.getElementById('x').value)">Compute Trignometric Identities</button>
+        <button onclick="prime_number(document.getElementById('x').value)">Prime Number</button>
 
         <div class="output">
-            <label>sin(x):</label>
-            <div class="output-div1">
+            <label>Output:</label>
+            <div class="output-div">
             </div>
-        </div>
-        <div class="output">
-            <label>cos(x):</label>
-            <div class="output-div2">
-            </div>
-        </div>    
-        <div class="output">
-            <label>tan(x):</label>
-            <div class="output-div3">
-            </div>        
         </div>
         <p class="error-message"></p>
     </main>
-
-    <script src="trignometricidentity.js"></script>
+    <script src="prime.js"></script>
 </body>
 </html>

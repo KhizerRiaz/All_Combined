@@ -10,24 +10,12 @@
 //   return x + y;
 // }
 
-<<<<<<< HEAD
-function eulerRK(x,y,b) {
-  var x = 0.0,
-    y = 0.0,
-    b = 0.0,
-    n = 5;
-
-  // x = prompt("Enter the value of n");
-  // y = prompt("Enter the value of y");
-  // b = prompt("Enter step size (b)");
-=======
 function euler(x, y, b){
     var n = 5;
 
 //   x = prompt("Enter the value of n");
 //   y = prompt("Enter the value of y");
 //   b = prompt("Enter step size (b)");
->>>>>>> b6d6148740d94d4063dce8d0399682a9ea55e255
 
   x = parseFloat(x);
   y = parseFloat(y);
