@@ -79,7 +79,7 @@ them to renter value
 
 ##LOAN_PAYMENT
 Input:100000, 2, 12
-Expected OUTPUT: 66666.67
+Expected OUTPUT: 1250
 
 Input:10000,0,0
 Expected OUTPUT: 0.00
