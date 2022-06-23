@@ -1,17 +1,10 @@
-let a = 10;
-let b = 2;
+// let a = 10;
+// let b = 2;
 
-function square(d, e) {
-  let c = Math.pow(d + e, 2);
+function square(d = 10, e = 2) {
+    let c = Math.pow(d + e, 2);
 
-  return c;
+    return c;
 }
 
-console.log(square(a, b));
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
+// console.log(square(a, b));
