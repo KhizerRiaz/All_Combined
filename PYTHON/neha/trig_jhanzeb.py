@@ -79,3 +79,37 @@ def main():
             print("enter a valid option")
         
 main()
+
+
+
+# My way of this code
+
+# import math
+
+# def cos(x):   
+#     print(int(math.cos(x)))
+#     return int(math.cos(x))
+# def sin(x):
+    
+#     print( int(math.sin(x)))
+#     return int(math.sin(x))
+# def tan(x):
+#     return int(math.tan(x))
+
+# def trig(x,y):
+#     if(y==1):
+#         sin(x)
+#     elif(y==2):
+#         cos(x)
+#     elif(y==3):
+#         tan(x)
+#     else:
+#         return 1
+
+
+
+# def main():
+
+#     print("jjkhkj")
+#     trig(322,2)
+# main()
