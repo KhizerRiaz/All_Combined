@@ -10,6 +10,8 @@ function Fib(n) {
     }
 }
 
+Fib(5)
+
 // var n = 0;
 // var n = prompt("Enter number: ")
 // console.log(Fib(n));
