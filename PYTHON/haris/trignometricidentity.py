@@ -1,13 +1,4 @@
-import math 
+def trignometricidentity(x):
+    import math
+    return(math.sin(x),math.cos(x),math.tan(x))
 
-def trignometricidentity():
-    try:
-        x =int(input("Enter a value to calculate trignometric identitities:"))
-    except:
-        print("An exception occurred")
-    print("Value of sin is::",math.sin(x))
-    print("Value of cos is::",math.cos(x))
-    print("Value of tan is::",math.tan(x))
-
-
-    

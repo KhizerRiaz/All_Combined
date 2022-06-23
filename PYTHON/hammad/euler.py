@@ -1,4 +1,4 @@
-# EULERS METHOD
+# EULERS 
 #  Yn+1 = Yn + h * f(x,y)
 # function f(x , y) = x + y
 
