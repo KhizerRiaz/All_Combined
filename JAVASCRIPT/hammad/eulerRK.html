@@ -59,11 +59,9 @@
     }
 
     .output-div{
-        width: auto;
+        width: 200px;
         border: 1px solid grey;
         margin-left: 10px;
-        display: flex;
-        /* height: auto; */
     }
 
     .error-message{
@@ -94,7 +92,7 @@
         <input type="number" name="b" id="b" required>
     </div>
 
-        <button onclick="eulerRK(document.getElementById('x').value,document.getElementById('y').value,document.getElementById('b').value)">Compute Euler Identity</button>
+        <button onclick="eulerRK(document.getElementById('x'),document.getElementById('y'),document.getElementById('b'))">Compute Euler Identity</button>
 
         <div class="output">
             <label>Output:</label>

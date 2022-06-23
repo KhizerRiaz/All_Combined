@@ -3,26 +3,15 @@
 // });
 
 function Fib(n) {
-    // n=parseInt(n);
     if (n <= 1) {
-        // document.querySelector('.output-div').textContent = n;
-        return n;
+        document.querySelector('.output-div').textContent = n;
     } else {
         var f = (Fib(n - 1) + Fib(n - 2));
-        
-        return f;
-        
+        document.querySelector('.output-div').textContent = f;
     }
 
     
-
-    
-}
-
-function fibonacci(n){
-    let fib = Fib(n);
-    document.querySelector('.output-div').textContent = fib;
 }
 // var n = 0;
 // var n = prompt("Enter number: ")
-// console.log(Fib(3));
+// console.log(Fib(n));
