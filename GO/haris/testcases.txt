@@ -1,0 +1,113 @@
+##Write test cases according to your assigned tasks
+
+Format should be
+Input:XYZ
+
+Expected OUTPUT:Z
+
+(DO Exception handling in your code)
+
+
+
+##BINOMIAL COEFFICIENT
+Input:8,3
+Expected OUTPUT:56
+
+Input:-9,9
+Expected OUTPUT:0
+
+Input:999,999
+Expected OUTPUT:1
+
+Input:10,100
+Expected OUTPUT:0
+
+##TRIGNOMETRIC IDENTITIES
+1) Expected input :
+ch = 1 
+Expected output:
+Prompts user to enter number to calculate sin value
+
+2) Expected input :
+ch = 2 
+Expected output:
+Prompts user to enter number to calculate cos value
+
+3)Expected input :
+ch = 3 
+Expected output:
+Prompts user to enter number to calculate tan value
+
+4)Expected input :
+ch = 4
+Expected output:
+Prints "Exit"
+
+5)Expected input :
+ch = some non-integer value
+Expected output:
+Informs user that an incorrect value has been eneters and asks
+them to renter value
+
+6)Expected input :
+ch = integer value beyond the range
+Expected output:
+Informs user that an incorrect value has been eneters and asks
+them to renter value
+
+7)Expected input :
+val = 23
+Expected output:
+Sin: -0.846220
+
+8)Expected input :
+val = 23
+Expected output:
+Cos:  -0.532833
+
+9)Expected input :
+val = 23
+Expected output:
+Tan: 1.588153
+
+10)Expected input :
+val = some string value
+Expected output:
+Informs user that an incorrect value has been eneters and asks
+them to renter value
+
+
+##LOAN_PAYMENT
+Input:100000, 2, 12
+Expected OUTPUT: 66666.67
+
+Input:10000,0,0
+Expected OUTPUT: 0.00
+
+Input:1234,3,0
+Expected OUTPUT:925
+
+Input:13456,0,4
+Expected OUTPUT:0.00
+##TAYLOR
+Input(x, numOfTerms): 2,10
+Expected Output: 7.3887125220458545
+
+Input(x, numOfTerms): -10, 10
+Expected Output: -27.70631023742594
+
+Input(x, numOfTerms): 0,10
+Expected Output: 1
+
+Input(x, numOfTerms): 2, -2
+Expected Output: Invalid input for number of terms
+
+##GAUSSIAN
+Input: 2
+Expected OUTPUT: 1.7724538509055159
+
+Input: ss
+Expected OUTPUT: DO NOT GIVE NEGATIVE VALUES OR INVALID VALUES
+
+Input: -1
+Expected OUTPUT: inf
