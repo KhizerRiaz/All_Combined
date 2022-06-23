@@ -1,15 +1,18 @@
-function binomial(n,k) {
-<<<<<<< HEAD
-    // n = 0;
-    // k = 0;
-=======
->>>>>>> b6d6148740d94d4063dce8d0399682a9ea55e255
-    // var n = prompt("Enter first value: ");
-    // var k = prompt("Enter second value: ");
+function binomial(x,num) {
     var coeff = 1;
-    for (var x = n - k + 1; x <= n; x++) coeff *= x;
-    for (x = 1; x <= k; x++) coeff /= x;
-    return coeff;
+    for (var y = x - num + 1; y <= x; y++)
+    coeff *= y;
+    for (y = 1; y <= num; y++)
+    coeff /= y;
+    ex = parseInt(x)
+    num = parseInt(num)
+    if(ex.value != '' && num.value !=''){
+        document.querySelector(".output-div").textContent = coeff;
+        document.querySelector(".error-message").textContent=""
+    }
+    else{
+        document.querySelector(".output-div").textContent = "";
+        document.querySelector(".error-message").textContent = "Enter the values of x and num to compute Binomial Coefficient"
+    }
+    
 }
-
-//document.getElementById("bino").innerHTML = binomial();

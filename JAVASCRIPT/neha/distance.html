@@ -68,40 +68,44 @@
         color: red;
     }
 
-    
 </style>
 <body>
     <main>
-    <h1>Trignometric Identity</h1>
-    
-    
+    <h1>Distance</h1>
+    <p>
+      <strong><em>Formula: sqrt((x2-x1)^2+(y2-y1)^2) </em></strong>
+    </p>
     <div class="x-value">
-        <label for="x">Enter value of x: </label>
+        <label for="x">Enter x1: </label>
         <input type="number" name="x" id="x" required/>
     </div>
-        
-       
 
-        <button onclick="trignometricidentity(document.getElementById('x').value)">Compute Trignometric Identities</button>
+    <div class="num-value">
+        <label for="num">Enter y1: </label>
+        <input type="number" name="num" id="num" required>
+    </div>
+
+    <div class="num2-value">
+        <label for="num2">Enter x2: </label>
+        <input type="number" name="num2" id="num2" required>
+    </div>
+
+    <div class="num3-value">
+        <label for="num3">Enter y2: </label>
+        <input type="number" name="num3" id="num3" required>
+    </div>
+
+
+        <button onclick="distance(document.getElementById('x').value,document.getElementById('num').value,document.getElementById('num2').value,document.getElementById('num3').value)">Compute Distance</button>
 
         <div class="output">
-            <label>sin(x):</label>
-            <div class="output-div1">
+            <label>Output:</label>
+            <div class="output-div">
             </div>
-        </div>
-        <div class="output">
-            <label>cos(x):</label>
-            <div class="output-div2">
-            </div>
-        </div>    
-        <div class="output">
-            <label>tan(x):</label>
-            <div class="output-div3">
-            </div>        
+            
         </div>
         <p class="error-message"></p>
     </main>
-
-    <script src="trignometricidentity.js"></script>
+    <script src="distance.js"></script>
 </body>
 </html>
