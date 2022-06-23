@@ -68,48 +68,44 @@
         color: red;
     }
 
-    
 </style>
 <body>
     <main>
-    <h1>Slope Formula</h1>
-    <!-- <p>
-      <strong><em>Formula: e^x=1+x/1!+x^2/2!+x^3/3!+…, </em></strong>  
-    </p> -->
-    
+    <h1>Distance</h1>
+    <p>
+      <strong><em>Formula: sqrt((x2-x1)^2+(y2-y1)^2) </em></strong>
+    </p>
     <div class="x-value">
-        <label for="x">Enter value of x1: </label>
-        <input type="number" name="x1" id="x1" required/>
-    </div>
-        
-    <div class="x-value">
-        <label for="x">Enter value of x2: </label>
-        <input type="number" name="x2" id="x2" required/>
+        <label for="x">Enter x1: </label>
+        <input type="number" name="x" id="x" required/>
     </div>
 
-    <div class="x-value">
-        <label for="x">Enter value of y1: </label>
-        <input type="number" name="y1" id="y1" required/>
+    <div class="num-value">
+        <label for="num">Enter y1: </label>
+        <input type="number" name="num" id="num" required>
     </div>
 
-    <div class="x-value">
-        <label for="x">Enter value of y2: </label>
-        <input type="number" name="y2" id="y2" required/>
+    <div class="num2-value">
+        <label for="num2">Enter x2: </label>
+        <input type="number" name="num2" id="num2" required>
     </div>
-       
 
-        <button onclick="slp(document.getElementById('x1').value, document.getElementById('x2').value, document.getElementById('y1').value, document.getElementById('y2').value)">Compute Slope Formula</button>
+    <div class="num3-value">
+        <label for="num3">Enter y2: </label>
+        <input type="number" name="num3" id="num3" required>
+    </div>
+
+
+        <button onclick="distance(document.getElementById('x').value,document.getElementById('num').value,document.getElementById('num2').value,document.getElementById('num3').value)">Compute Distance</button>
 
         <div class="output">
             <label>Output:</label>
             <div class="output-div">
-
             </div>
             
         </div>
         <p class="error-message"></p>
     </main>
-
-    <script src="slopeformula01.js"></script>
+    <script src="distance.js"></script>
 </body>
 </html>
