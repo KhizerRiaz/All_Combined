@@ -1,8 +1,7 @@
 # Snippet by: Muhammad Hammad Hassan
-
 import math
-
 def relativity(M,v):
+
   """
   this finction implements Einstien's Relativity Theory's derived formula (the Lorentz version of it)
   input;
@@ -17,3 +16,4 @@ def relativity(M,v):
   lorentzFactor = math.pow(LF_sub,(1/2))
   r = generalRelativity / lorentzFactor
   return r
+print(relativity(1, 2))
