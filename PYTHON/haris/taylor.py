@@ -15,7 +15,7 @@ def taylorExpansion(x , numOfTerms):
         sum = sum+(pow(x, i)/fact)
 
     sum = sum + 1
-    print("The answer is ",sum)
+    # print("The answer is ",sum)
 
     
         # x = int(input("Enter value of x:"))

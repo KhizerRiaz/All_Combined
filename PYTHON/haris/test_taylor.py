@@ -8,7 +8,7 @@ class TestBin_Coff(unittest.TestCase):
         self.assertEqual(taylorExpansion(142 , 19) , 9.845025263560626e+22)
 
     def test_NotEqual(self):
-        self.assertNotEqual(taylorExpansion(3 , 6) , 40)
+        self.assertNotEqual(taylorExpansion(3 , 8) , 20.312423)
         self.assertNotEqual(taylorExpansion(31 , 4) , 324)
         self.assertNotEqual(taylorExpansion(9 , 3) , 0)
         
