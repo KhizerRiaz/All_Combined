@@ -18,7 +18,7 @@ def compute_real_fourier_coeffs(func, N):
         result.append((an, bn))
     return np.array(result)
   
-  def fit_func_by_fourier_series_with_real_coeffs(t, AB):
+def fit_func_by_fourier_series_with_real_coeffs(t, AB):
     result = 0.
     A = AB[:,0]
     B = AB[:,1]
@@ -29,29 +29,29 @@ def compute_real_fourier_coeffs(func, N):
             result +=  A[0]/2.
     return result
   
-  def plot_graph():
-  P=input("Enter Period for fourier Series:")
-  maxN=8
-  COLs = 2 #cols of plt
-  ROWs = 1 + (maxN-1) // COLs #rows of plt
-  plt.rcParams['font.size'] = 8
-  fig, axs = plt.subplots(ROWs, COLs)
-  fig.tight_layout(rect=[0, 0, 1, 0.95], pad=3.0)
-  fig.suptitle('f(t) = ((t % P) - (P / 2.)) ** 3 where P=' + str(P))
 
-  #plot, in the range from BT to ET, the true f(t) in blue and the approximation in red
-  for N in range(1, maxN + 1):
-      AB = compute_real_fourier_coeffs(f, N)
-      #AB contains the list of couples of (an, bn) coefficients for n in 1..N interval.
+def plot_graph(P):
+    maxN=8
+    COLs = 2 #cols of plt
+    ROWs = 1 + (maxN-1) // COLs #rows of plt
+    plt.rcParams['font.size'] = 8
+    fig, axs = plt.subplots(ROWs, COLs)
+    fig.tight_layout(rect=[0, 0, 1, 0.95], pad=3.0)
+    fig.suptitle('f(t) = ((t % P) - (P / 2.)) ** 3 where P=' + str(P))
 
-      y_approx = fit_func_by_fourier_series_with_real_coeffs(t_range, AB)
-      #y_approx contains the discrete values of approximation obtained by the Fourier series
+    #plot, in the range from BT to ET, the true f(t) in blue and the approximation in red
+    for N in range(1, maxN + 1):
+        AB = compute_real_fourier_coeffs(f, N)
+        #AB contains the list of couples of (an, bn) coefficients for n in 1..N interval.
 
-      row = (N-1) // COLs
-      col = (N-1) % COLs
-      axs[row, col].set_title('case N=' + str(N))
-      axs[row, col].scatter(t_range, y_true, color='blue', s=1, marker='.')
-      axs[row, col].scatter(t_range, y_approx, color='red', s=2, marker='.')
-  plt.show()
+        y_approx = fit_func_by_fourier_series_with_real_coeffs(t_range, AB)
+        #y_approx contains the discrete values of approximation obtained by the Fourier series
 
-plot_graph();
+        row = (N-1) // COLs
+        col = (N-1) % COLs
+        axs[row, col].set_title('case N=' + str(N))
+        axs[row, col].scatter(t_range, y_true, color='blue', s=1, marker='.')
+    axs[row, col].scatter(t_range, y_approx, color='red', s=2, marker='.')
+    plt.show()
+
+plot_graph(3)

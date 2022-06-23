@@ -18,16 +18,15 @@ def relax(A, maxsteps, convergence):
 
         diff /=(Nx*Ny)
         iterations += 1
-    print ("Output : ", diff)
+    return(diff)
 
 def boundary(A,x,y):
 
 
     Nx = A.shape[1]
     Ny = A.shape[0]
-    Lx = x[Nx-1] 
-    Ly = x[Nx-1]
-
+    Lx = x[Nx-1]
+    
 
     A[:,0]    =   100*numpy.sin(math.pi*x/Lx)
     A[:,Nx-1] = - 100*numpy.sin(math.pi*x/Lx)
@@ -35,20 +34,17 @@ def boundary(A,x,y):
     A[Ny-1,:] = 0.0
 
 
-import sys
-Nx = input("Enter Nx : ")
-Ny = input("Enter Ny : ")
-if Nx!=Ny:
-    print("Nx and Ny must be equal")
-    exit()
-maxiter = input("Enter no of iterations (P) : ")
-Nx=int(Nx)
-Ny=int(Ny)
-maxiter=int(maxiter)
+def inputs(Nx,Ny,maxiter):
+    Nx=int(Nx)
+    Ny=int(Ny)
+    maxiter=int(maxiter)
+    x = numpy.linspace(0,1,num=Nx+2)
+    y = numpy.linspace(0,1,num=Ny+2)
+    A = numpy.zeros((Nx+2,Ny+2))
+    boundary(A,x,y)
+    return(relax(A,maxiter,0.00001))
 
-x = numpy.linspace(0,1,num=Nx+2)
-y = numpy.linspace(0,1,num=Ny+2)
-A = numpy.zeros((Nx+2,Ny+2))
 
-boundary(A,x,y)
-relax(A,maxiter,0.00001)
+if __name__ == "__main__":
+    print(inputs(4,4,100))   
+
