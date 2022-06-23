@@ -8,7 +8,7 @@ function FourierSeries(n = 5, x = 4, i = 1) {
     while (i <= n) {
         const a = Math.sin(n * x);
         const number = (1 / n) * a;
-        console.log(number);
+        arr.push(number)
         i++;
     }
     return arr;
