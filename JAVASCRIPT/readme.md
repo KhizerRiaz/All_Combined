@@ -12,6 +12,11 @@ npm intall jest
 npm test
 
 ```
+## To run Frontend
+```
+Head over to combinedtasks and run index.html
+
+```
 # Some SS of our fron end
 
 ![First](1.PNG)
