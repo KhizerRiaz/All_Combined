@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 function relativity(M,v,c) {
@@ -23,17 +22,6 @@ else{
 } 
 
 // relativity(12,30);
-=======
-function relativity(M,v) {
-    const c = 299792458; // m/s
-    var generalRelativity = M * Math.pow(c,2);
-    var LF_sub = 1-(v/Math.pow(c,2));
-    var lorentzFactor = Math.pow(LF_sub,(1/2));
-    var r = generalRelativity / lorentzFactor;
-    return r;
-} 
-
->>>>>>> b6d6148740d94d4063dce8d0399682a9ea55e255
 // document.getElementById("event_button").addEventListener("click", function(){
 //     var mass = document.getElementById("mass_box").value;
 //     var velocity = document.getElementById("velocity_box").value;
