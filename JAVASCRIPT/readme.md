@@ -14,6 +14,8 @@ npm test
 ```
 # Some SS of our fron end
 
-![First](1.png)
-![Secind](2.png)
-![Third](3.png)
+![First](1.PNG)
+![Secind](2.PNG)
+![Third](3.PNG)
+
+
