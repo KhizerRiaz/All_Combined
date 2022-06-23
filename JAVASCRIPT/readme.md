@@ -7,7 +7,13 @@
 ```
 npm init
 npm install
+npm install mathjs
 npm intall jest
 npm test
 
 ```
+# Some SS of our fron end
+
+![First](1.png)
+![Secind](2.png)
+![Third](3.png)
