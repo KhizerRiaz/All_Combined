@@ -30,7 +30,7 @@ def fit_func_by_fourier_series_with_real_coeffs(t, AB):
     return result
   
 
-def plot_graph(P):
+def plot_graph(P,x):
     maxN=8
     COLs = 2 #cols of plt
     ROWs = 1 + (maxN-1) // COLs #rows of plt
@@ -52,6 +52,12 @@ def plot_graph(P):
         axs[row, col].set_title('case N=' + str(N))
         axs[row, col].scatter(t_range, y_true, color='blue', s=1, marker='.')
     axs[row, col].scatter(t_range, y_approx, color='red', s=2, marker='.')
-    plt.show()
+    # plt.show()
+    if(P==0 & x==0):
+        y_approx=0
+        return y_approx
+    elif(x==1):
+        return 1
+        # The Series have been generated
 
-plot_graph(3)
+plot_graph(3,5)
