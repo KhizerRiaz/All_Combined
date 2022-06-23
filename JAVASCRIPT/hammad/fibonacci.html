@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fibonacci</title>
+    <title>Euler</title>
 </head>
 
 <style>
@@ -73,16 +73,26 @@
 <body>
     <main>
     <h1>Fibonacci</h1>
-    
+    <!-- <p>
+      <strong><em>Formula: e^x=1+x/1!+x^2/2!+x^3/3!+…, </em></strong>  
+    </p> -->
     
     <div class="x-value">
         <label for="x">Enter value of n: </label>
         <input type="number" name="n" id="n" required/>
     </div>
         
-    
+    <!-- <div class="num-value">
+        <label for="num">Enter value of y: </label>
+        <input type="number" name="y" id="y" required>
+    </div>
+       
+    <div class="num-value">
+        <label for="num">Enter value of b: </label>
+        <input type="number" name="b" id="b" required>
+    </div> -->
 
-        <button onclick="fibonacci(document.getElementById('n').value)">Compute Fibonacci</button>
+        <button onclick="Fib(document.getElementById('n'))">Compute Fibonacci</button>
 
         <div class="output">
             <label>Output:</label>
@@ -94,6 +104,6 @@
         <p class="error-message"></p>
     </main>
 
-    <script src="fibonacci.js"></script>
+    <script src="eulerRK1stForm.js"></script>
 </body>
 </html>
