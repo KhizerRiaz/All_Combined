@@ -10,15 +10,15 @@ function f(x, y) {
   return x + y;
 }
 
-const euler = () => {
+function eulerRK(x,y,b) {
   var x = 0.0,
     y = 0.0,
     b = 0.0,
     n = 5;
 
-  x = prompt("Enter the value of n");
-  y = prompt("Enter the value of y");
-  b = prompt("Enter step size (b)");
+  // x = prompt("Enter the value of n");
+  // y = prompt("Enter the value of y");
+  // b = prompt("Enter step size (b)");
 
   x = parseFloat(x);
   y = parseFloat(y);

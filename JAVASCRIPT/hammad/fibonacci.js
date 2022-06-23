@@ -4,11 +4,14 @@ const prompt = require("prompt-sync")({
 
 function Fib(n) {
     if (n <= 1) {
-        return n;
+        document.querySelector('.output-div').textContent = n;
     } else {
-        return (Fib(n - 1) + Fib(n - 2));
+        var f = (Fib(n - 1) + Fib(n - 2));
+        document.querySelector('.output-div').textContent = f;
     }
+
+    
 }
-var n = 0;
-var n = prompt("Enter number: ")
-console.log(Fib(n));
+// var n = 0;
+// var n = prompt("Enter number: ")
+// console.log(Fib(n));

@@ -1,7 +1,7 @@
 var f=function(x,y){
 	return x*x+2*x*y;
 }
-var partialDerivative=function(f,x,y,flag){
+function partialDerivative(f,x,y,flag){
 	var h = dx=dy=0.0001;
 	var dz;
 	switch (flag){
@@ -16,8 +16,9 @@ var partialDerivative=function(f,x,y,flag){
 	break;
 }
 }
-alert(partialDerivative(f,2,1,"x"));
+document.querySelector(".output-div").textContent =(partialDerivative(f,2,1,"x"));
 //for sine and cosine functions
+
 var g=function(x,y){
 	return Math.sin(x*y)-x*y*y;
 }
@@ -37,7 +38,7 @@ var partialDerivative=function(f,x,y,flag){
 }
 }
 
-alert(partialDerivative(g,Math.PI,1,"x"));
+// alert(partialDerivative(g,Math.PI,1,"x"));
 
 //for power functions
 var p=function(x,y){
@@ -59,4 +60,6 @@ var partialDerivative=function(f,x,y,flag){
 }
 }
 
-alert(partialDerivative(p,1,4,"x"));
+// alert(partialDerivative(p,1,4,"x"));
+
+

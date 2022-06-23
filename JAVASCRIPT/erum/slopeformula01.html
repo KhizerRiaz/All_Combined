@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        align-items: center;
+        border: 1px solid #222222;
+        padding-bottom: 20px;
+
+    }
+
+    main input{
+        width: 100px;
+        height: 30px;
+        margin-bottom: 20px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    main input:focus{
+        outline: transparent;
+    }
+
+    main label{
+        margin-bottom: 10px;
+    }
+
+    main button{
+        width: 200px;
+        height: 50px;
+        border-radius: 20px;
+        border: 1px solid transparent;
+    }
+
+    main button:hover{
+        background-color:#2222;
+        font-weight: bold;
+    }
+
+    .output{
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .output-div{
+        width: 200px;
+        border: 1px solid grey;
+        margin-left: 10px;
+    }
+
+    .error-message{
+        color: red;
+    }
+
+    
+</style>
+<body>
+    <main>
+    <h1>Slope Formula</h1>
+    <!-- <p>
+      <strong><em>Formula: e^x=1+x/1!+x^2/2!+x^3/3!+…, </em></strong>  
+    </p> -->
+    
+    <div class="x-value">
+        <label for="x">Enter value of x1: </label>
+        <input type="number" name="x1" id="x1" required/>
+    </div>
+        
+    <div class="x-value">
+        <label for="x">Enter value of x2: </label>
+        <input type="number" name="x2" id="x2" required/>
+    </div>
+
+    <div class="x-value">
+        <label for="x">Enter value of y1: </label>
+        <input type="number" name="y1" id="y1" required/>
+    </div>
+
+    <div class="x-value">
+        <label for="x">Enter value of y2: </label>
+        <input type="number" name="y2" id="y2" required/>
+    </div>
+       
+
+        <button onclick="slp(document.getElementById('x1').value, document.getElementById('x2').value), document.getElementById('y1'), document.getElementById('y2')">Compute Slope Formula</button>
+
+        <div class="output">
+            <label>Output:</label>
+            <div class="output-div">
+
+            </div>
+            
+        </div>
+        <p class="error-message"></p>
+    </main>
+
+    <script src="slopeformula01.js"></script>
+</body>
+</html>
