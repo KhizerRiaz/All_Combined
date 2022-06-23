@@ -1,7 +1,14 @@
+<<<<<<< HEAD
+
+
+const prompt = require('prompt-sync')({fake_val: "OPTIONAL CONFIG VALUES HERE",});
+let root1, root2;
+=======
 // const prompt = require('prompt-sync')({fake_val: "OPTIONAL CONFIG VALUES HERE",});
 
 function quadratic_equation(a,b,c){
     let root1, root2;
+>>>>>>> b6d6148740d94d4063dce8d0399682a9ea55e255
 
 
     // let a = prompt("Enter the first number: ");
