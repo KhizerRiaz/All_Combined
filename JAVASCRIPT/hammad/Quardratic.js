@@ -11,3 +11,4 @@ function quard(a,b,c){
 }
 
 // console.log (quard(1,2,-15))
+// 3,-5
