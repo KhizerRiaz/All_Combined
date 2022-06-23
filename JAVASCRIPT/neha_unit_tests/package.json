@@ -1,0 +1,15 @@
+{
+  "name": "neha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "distance(zain).js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.1"
+  }
+}
